@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,13 @@
             --text: #e0e0e0;
             --card: #1a1a1a;
         }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Inter', system-ui, sans-serif;
             background: var(--bg);
@@ -21,10 +26,10 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
+
         header {
-            background: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.85)), 
-                        url('background.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.85)),
+                url('background.jpg') center/cover no-repeat;
             padding: 6rem 1rem 5rem;
             text-align: center;
             border-bottom: 1px solid #00f5ff22;
@@ -33,7 +38,7 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         h1 {
             font-size: 4.8rem;
             font-weight: 700;
@@ -42,26 +47,26 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 0.5rem;
         }
-        
+
         .tagline {
             font-size: 1.6rem;
             opacity: 0.9;
             margin-bottom: 2rem;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 1rem;
         }
-        
+
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .card {
             background: var(--card);
             border: 1px solid #00f5ff22;
@@ -69,19 +74,19 @@
             padding: 2.5rem 2rem;
             transition: all 0.3s ease;
         }
-        
+
         .card:hover {
             transform: translateY(-8px);
             border-color: var(--accent);
             box-shadow: 0 20px 40px rgba(0, 245, 255, 0.1);
         }
-        
+
         .card h3 {
             color: var(--accent);
             font-size: 1.6rem;
             margin-bottom: 1rem;
         }
-        
+
         footer {
             text-align: center;
             padding: 3rem 1rem;
@@ -92,11 +97,16 @@
         }
     </style>
 </head>
+
 <body>
     <header>
-        <div>
-            <h1>IndyTruckin</h1>
-            <p class="tagline">Modern tools for independent truckers</p>
+        <div style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem; text-align: center;">
+            <h1 style="font-size: clamp(2.8rem, 8vw, 4.8rem); line-height: 1.1;">
+                IndyTruckin
+            </h1>
+            <p class="tagline" style="font-size: clamp(1.1rem, 4vw, 1.6rem); opacity: 0.9; margin: 1rem 0 2rem;">
+                Modern tools for independent truckers
+            </p>
         </div>
     </header>
 
@@ -126,4 +136,5 @@
         <p>&copy; 2026 IndyTruckin • Built for the long haul</p>
     </footer>
 </body>
+
 </html>
