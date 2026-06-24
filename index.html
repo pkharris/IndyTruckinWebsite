@@ -23,14 +23,19 @@
         }
         
         header {
-            background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
-            padding: 5rem 1rem 4rem;
+            background: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.85)), 
+                        url('background.jpg') center/cover no-repeat;
+            padding: 6rem 1rem 5rem;
             text-align: center;
             border-bottom: 1px solid #00f5ff22;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         h1 {
-            font-size: 4.5rem;
+            font-size: 4.8rem;
             font-weight: 700;
             background: linear-gradient(90deg, #00f5ff, #00b8ff);
             -webkit-background-clip: text;
@@ -39,7 +44,7 @@
         }
         
         .tagline {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             opacity: 0.9;
             margin-bottom: 2rem;
         }
@@ -89,8 +94,10 @@
 </head>
 <body>
     <header>
-        <h1>IndyTruckin</h1>
-        <p class="tagline">Modern tools for independent truckers</p>
+        <div>
+            <h1>IndyTruckin</h1>
+            <p class="tagline">Modern tools for independent truckers</p>
+        </div>
     </header>
 
     <div class="container">
