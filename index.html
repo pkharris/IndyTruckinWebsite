@@ -3,77 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndyTruckin - Trucking Tools & Resources</title>
+    <title>IndyTruckin • Tools for the Road</title>
     <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #00f5ff;
+            --text: #e0e0e0;
+            --card: #1a1a1a;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            color: #333;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
+        
         header {
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-            color: white;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+            padding: 5rem 1rem 4rem;
             text-align: center;
-            padding: 4rem 1rem;
+            border-bottom: 1px solid #00f5ff22;
         }
+        
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00f5ff, #00b8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
         .container {
             max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            margin: 0 auto;
+            padding: 4rem 1rem;
         }
-        h1 { margin: 0; font-size: 3rem; }
-        h2 { color: #1e40af; }
-        .features {
+        
+        .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
+        
         .card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: var(--card);
+            border: 1px solid #00f5ff22;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            transition: all 0.3s ease;
         }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.1);
+        }
+        
+        .card h3 {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        
         footer {
             text-align: center;
-            padding: 2rem;
-            background: #1f2937;
-            color: #9ca3af;
-            margin-top: 4rem;
+            padding: 3rem 1rem;
+            background: #050505;
+            border-top: 1px solid #ffffff08;
+            font-size: 0.95rem;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>IndyTruckin</h1>
-        <p>Smart tools for independent truckers</p>
+        <p class="tagline">Modern tools for independent truckers</p>
     </header>
 
     <div class="container">
-        <h2>Welcome</h2>
-        <p>Building better tools for the road. Fuel optimization, load boards, compliance, and more.</p>
+        <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 1rem;">Built for the Road</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; opacity: 0.85;">
+            Fuel optimization, load management, expense tracking, and more — designed by truckers, for truckers.
+        </p>
 
-        <div class="features">
+        <div class="cards">
             <div class="card">
-                <h3>🚛 Route Optimizer</h3>
-                <p>Save time and fuel with smart routing.</p>
+                <h3>🚛 Smart Routing</h3>
+                <p>Real-time route optimization that saves time and diesel. Weather-aware and HOS compliant.</p>
             </div>
             <div class="card">
-                <h3>📊 Logistics Tools</h3>
-                <p>Track expenses, loads, and performance.</p>
+                <h3>📊 Live Analytics</h3>
+                <p>Track profitability, maintenance, and performance across every load.</p>
             </div>
             <div class="card">
-                <h3>📱 Mobile Ready</h3>
-                <p>Access everything from your phone on the road.</p>
+                <h3>🔌 Offline First</h3>
+                <p>Works reliably even in dead zones. Syncs when you're back online.</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 IndyTruckin • Built with ❤️ for truckers</p>
+        <p>&copy; 2026 IndyTruckin • Built for the long haul</p>
     </footer>
 </body>
 </html>
