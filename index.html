@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>IndyTruckin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndyTruckin - Trucking Tools & Resources</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1 { margin: 0; font-size: 3rem; }
+        h2 { color: #1e40af; }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1f2937;
+            color: #9ca3af;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>IndyTruckin Website</h1>
-  <p>Coming soon...</p>
+    <header>
+        <h1>IndyTruckin</h1>
+        <p>Smart tools for independent truckers</p>
+    </header>
+
+    <div class="container">
+        <h2>Welcome</h2>
+        <p>Building better tools for the road. Fuel optimization, load boards, compliance, and more.</p>
+
+        <div class="features">
+            <div class="card">
+                <h3>🚛 Route Optimizer</h3>
+                <p>Save time and fuel with smart routing.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Logistics Tools</h3>
+                <p>Track expenses, loads, and performance.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Mobile Ready</h3>
+                <p>Access everything from your phone on the road.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 IndyTruckin • Built with ❤️ for truckers</p>
+    </footer>
 </body>
 </html>
